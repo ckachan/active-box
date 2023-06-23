@@ -1,0 +1,321 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    padding:0 15px;
+    margin:0 auto;
+    position:relative;
+    
+}
+.btn{
+    padding:24px 0;
+    max-width: 370px;
+    width:100%;
+    background:#FF4343;
+    border:none;
+    font-family: 'Raleway';
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    border:none;
+    color: #FFFFFF;
+}
+.btn:hover{
+    background: #E71414;
+}
+
+.btn:active{
+    background: #FF4343;
+    box-shadow: 4px 4px 30px #FF4343;
+}
+
+/* MAIN */
+.main{
+    background-image: url(/image/main.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position:relative;
+    padding-bottom: 120px;
+    margin-bottom: 116px;
+}
+.main::before {
+    content:"";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #252B49;
+    opacity:.8;
+    position: absolute;
+    left: 0;
+    top:0;}
+
+.main__navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 130px;
+    border-bottom:1px solid rgba(186, 187, 197, 1) ;
+
+}
+.main__logo-wrapper{
+    width:184px;
+    height:25.7px;
+}
+.main__logo{
+    margin: 0 auto;
+    width:100%;
+    height:100%;
+    object-fit: scale-down;
+
+}
+.main__menu-items{
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.main__menu-item {
+    text-decoration: none;
+    min-width: 134px;
+    padding: 36px 0;
+    display: block;
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    color: #FFFFFF;
+    position:relative;
+}
+
+.main__menu-item:hover::before{
+    display:inline-block;
+    content:"";
+    position:absolute;
+    width:134px;
+    border-bottom: 3px solid rgba(186, 187, 197, 1);
+    top:100%;
+    right:0%;
+    transform:translateY(-2px)
+}
+.main__menu-item:active{
+    color:#E71414;
+}
+.main__menu-item:active::before{
+    display:inline-block;
+    content:"";
+    position:absolute;
+    width:134px;
+    border-bottom: 3px solid #E71414;
+    top:100%;
+    right:0%;
+    transform:translateY(-2px)
+}
+.main__content{
+    text-align: center;
+}
+
+.main__title{
+    margin-bottom: 31px;
+    font-family: 'Raleway';
+    font-weight: 900;
+    font-size: 64px;
+    /* line-height: 75px; */
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.main__subtitle{
+    margin-bottom: 80px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+@media (max-width:1024px){
+    .container{
+        max-width: 1014px;
+        padding: 0 5px;
+    }
+    .main{
+        margin-bottom: 78px;
+    }
+    .main__navigation {
+        margin-bottom: 157px;
+    }
+    .main__menu-item{
+        font-size: 12px;
+    }
+    .main__title{
+        margin-bottom: 61px;
+        font-size: 48px;
+    }
+    .main__subtitle{
+        margin-bottom: 89.14px;
+        font-size: 18px;
+        max-width: ;
+        /* line-height: 28px; */
+        color: #ffffff;
+    }
+    .btn{
+        padding:28px 0;
+        max-width: 314px;
+    }
+}
+@media(max-width:320px){
+    .container{
+        max-width: 290px;
+        padding: 0 5px;
+    }
+    .main{
+        margin-bottom: 40px;
+    }
+    .main__logo-wrapper{
+        max-width: 103px;
+        max-height: 14px;
+    }
+    .main__navigation {
+        margin-bottom: 50px;
+    }
+    
+    .main__title{
+        margin-bottom: 32.71px;
+        font-size: 36px;
+    }
+    .main__subtitle{
+        margin-bottom: 49.29px;
+        font-size: 14px;
+        /* line-height: 28px; */
+        color: #ffffff;
+    }
+    .btn{
+        max-width: 280px;
+        padding:18px 0;
+        background:#FF4343;
+        font-size: 24px;
+    }
+}
+
+   /* BENEFITS */
+.benefits{
+    margin-bottom: 116px;
+    text-align: center;
+}
+
+.benefits__items{
+    justify-content: space-between;
+    display:flex;
+    column-gap: 30px;
+}
+.benefits__items:not(:last-child){
+    margin-bottom: 88.57px;
+}
+
+.benefits__item{
+    max-width:370px;
+}
+.benefits__icon-wrap{
+    width:100px;
+    height:100px;
+    margin-bottom: 51px;
+    margin: 0 auto 51px auto;
+}
+.benefits__icon{
+    width:100%;
+    height:100%;
+    object-fit: scale-down;
+}
+.betefits__item-title{
+    font-family: 'Raleway';
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #2D3033;
+    margin-bottom: 49px;
+}
+.benefits__item-subtitle{
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #6C7279;
+}
+
+@media (max-width:1024px){
+.benefits{
+    margin-bottom: 80px;
+}
+
+.benefits__items{
+    justify-content: space-between;
+    display:flex;
+    column-gap: 20px;
+}
+.benefits__items:not(:last-child){
+    margin-bottom: 49px;
+}
+
+.benefits__item{
+    max-width:315px;
+}
+.benefits__icon-wrap{
+    width:85px;
+    height:85px;
+    margin-bottom: 26.27px;
+}
+
+.betefits__item-title{
+    font-size: 18px;
+    /* line-height: 28px; */
+    margin-bottom: 16.2px;
+    color:#252B49
+}
+.benefits__item-subtitle{
+    font-size: 14px;
+    /* line-height: 21px; */
+}
+}
+@media(max-width:320px){
+    .benefits{
+        margin-bottom: 34.85px;
+    }
+    
+    .benefits__items{
+        /* justify-content: center; */
+        row-gap:49.84px;
+        flex-wrap: wrap;
+        display:block;
+        flex-direction: column;
+    }
+    .benefits__items:not(:last-child){
+        margin-bottom: 49px;
+    }
+
+    .benefits__item{
+        /* max-width:315px; */
+    }
+    .benefits__icon-wrap{
+        width:85px;
+        height:85px;
+        margin-bottom: 30px;
+    }
+    
+    .betefits__item-title{
+        font-size: 18px;
+        /* line-height: 28px; */
+        margin-bottom: 16.2px;
+        color:#252B49
+    }
+    .benefits__item-subtitle{
+        font-size: 14px;
+        /* line-height: 21px; */
+    }
+    }
+}
