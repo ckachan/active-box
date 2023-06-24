@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
-    <header class="main">
-        <div class="container main__container">
-            <div class="main__navigation">
-                <a class="main__logo-wrapper"href="#">
-                    <svg class="main__logo" width="184" height="27" viewBox="0 0 184 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__navigation">
+                <a class="header__logo-wrapper"href="#">
+                    <svg class="header__logo" width="184" height="27" viewBox="0 0 184 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M16.0136 21.0865H7.81939L6.38839 25.7644H0L9.09706 0.723712H14.7188L23.884 25.7644H17.4616L16.0136 21.0865ZM9.25038 16.4257H14.5826L11.908 7.74061L9.25038 16.4257Z" fill="#656980"/>
                         <path d="M45.4001 17.2856C45.3206 19.0284 44.855 20.5705 44.0032 21.912C43.1514 23.242 41.9532 24.2739 40.4087 25.0077C38.8755 25.7415 37.1208 26.1084 35.1446 26.1084C31.8851 26.1084 29.3184 25.0363 27.4445 22.8923C25.5706 20.7482 24.6336 17.7213 24.6336 13.8116V12.5733C24.6336 10.1197 25.0538 7.97565 25.8943 6.14117C26.746 4.29522 27.9669 2.8735 29.5569 1.876C31.1469 0.867031 32.9868 0.362549 35.0765 0.362549C38.0861 0.362549 40.5052 1.16513 42.3337 2.77031C44.1622 4.36401 45.2014 6.56539 45.4512 9.37444H39.4887C39.4433 7.84953 39.0629 6.75457 38.3474 6.08957C37.6319 5.42457 36.5416 5.09207 35.0765 5.09207C33.5887 5.09207 32.4984 5.65388 31.8056 6.7775C31.1129 7.90112 30.7494 9.69548 30.7154 12.1606V13.932C30.7154 16.6034 31.0447 18.5125 31.7034 19.659C32.3735 20.8056 33.5206 21.3788 35.1446 21.3788C36.5189 21.3788 37.5694 21.0521 38.2962 20.3985C39.0231 19.745 39.4092 18.7074 39.4547 17.2856H45.4001Z" fill="#656980"/>
                         <path d="M67.1888 5.38444H59.7442V25.7644H53.7647V5.38444H46.4563V0.723712H67.1888V5.38444Z" fill="#656980"/>
@@ -26,25 +26,32 @@
                         <path d="M174.373 12.2465L182.38 0.706514H183.539L174.953 12.9689L183.862 25.7472H182.721L174.373 13.6912L165.992 25.7472H164.885L173.794 12.9689L165.208 0.706514H166.367L174.373 12.2465Z" fill="white"/>
                     </svg>
                 </a>
-                <nav class="main__menu">
-                    <ul class="main__menu-items">
-                        <li><a class="main__menu-item" href="#">features</a></li>
-                        <li><a class="main__menu-item" href="#">works</a></li>
-                        <li><a class="main__menu-item" href="#">our team</a></li>
-                        <li><a class="main__menu-item" href="#">testimonials</a></li>
-                        <li><a class="main__menu-item" href="#">download</a></li>
+                <div class="header__burger-wrapper">
+                    <svg class="header__burger" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H24V3H0V0ZM0 7.5H24V10.5H0V7.5ZM0 15H24V18H0V15Z" fill="white"/>
+                        </svg>                        
+                </div>
+                <nav class="header__menu">
+                    <ul class="header__menu-items">
+                        <li><a class="header__menu-item" href="#">features</a></li>
+                        <li><a class="header__menu-item" href="#">works</a></li>
+                        <li><a class="header__menu-item" href="#">our team</a></li>
+                        <li><a class="header__menu-item" href="#">testimonials</a></li>
+                        <li><a class="header__menu-item" href="#">download</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="main__content">
-                <h1 class="title main__title">Your Favorite One Page Multi Purpose Template</h1>
-                <p class="subtitle main__subtitle"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna
-                    vel scelerisque nisl consectetur et.</p>
-                <button class="btn main__btn">find out more</button>
-            </div>
         </div>
     </header>
-    <div class="benefits">
+    <section class="main">
+        <div class="container main__container">
+            <h1 class="title main__title">Your Favorite One Page Multi Purpose Template</h1>
+            <p class="subtitle main__subtitle"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna
+                    vel scelerisque nisl consectetur et.</p>
+            <button class="btn main__btn">find out more</button>
+        </div>
+    </section>
+    <section class="benefits">
         <div class="container benefits__container">
             <div class="benefits__items">
                 <article class="benefits__item">
@@ -93,7 +100,7 @@
                     </article>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
 </body>
 </html>
