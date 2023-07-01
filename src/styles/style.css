@@ -39,7 +39,8 @@
 /* Header */
 
 .header{
-    position:fixed;
+    /* position:fixed; */
+    position:absolute;
     width:100%;
     z-index:50;
     top:0;
@@ -149,7 +150,7 @@
     text-align: center;
 }
 .main{
-    background-image: url(/image/main.jpg);
+    background-image: url(/src/image/main.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
