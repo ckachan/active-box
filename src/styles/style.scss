@@ -57,7 +57,16 @@
     background: #FF4343;
     box-shadow: 4px 4px 30px #FF4343;}
     }
+@keyframes slide{
+    from {
+        width: 0%;
+    }
+        
+    to {
+        width: 100%;
+    }
 
+    }
 .header {
     position:fixed;
     width:100%;
@@ -134,17 +143,8 @@
         line-height: 15px;
         color: #FFFFFF;
         position:relative; 
+        animation:slide 1s linear;
 
-        @keyframes slide{
-            from {
-                width: 0%;
-            }
-            
-            to {
-                width: 100%;
-            }
-
-        }
 
         @media(max-width:1024px){
             font-size: 12px;}
@@ -153,6 +153,7 @@
             min-width: 110px;
     }
 }
+
     &__menu-item:hover::before{
         display:inline-block;
         content:"";
@@ -523,7 +524,8 @@
         column-gap: 5px;
     }
     &__icon{
-        fill:#C6CBCD
+        fill:#C6CBCD;
+        transition: 0.5 linear;
     }
     &__icon-wrap{
         width: 39px;
@@ -542,14 +544,15 @@
             border: 1px solid rgba(255, 67, 67, 0.8);
             transform:scale(1.1);
             path{
-                fill:rgba(255, 67, 67, 0.8)
+                fill:rgba(255, 67, 67, 0.8);
+                transition: fill 0.5 linear;
             }
         }
         &:active{
             border:1px solid rgba(185, 12, 12, 0.8);
             
             path{
-                fill:rgba(185, 12, 12, 0.8)
+                fill:rgba(185, 12, 12, 0.8);
             }
         }
     }
