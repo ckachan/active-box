@@ -644,7 +644,6 @@ path {
   margin-bottom: 114px;
 }
 .swiper .swiper-slide {
-  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: 31px;
@@ -655,12 +654,16 @@ path {
   }
 }
 .swiper__img-wrap {
-  aspect-ratio: 1/0.66;
   display: flex;
   position: relative;
 }
+@media (min-width: 1025) {
+  .swiper__img-wrap {
+    aspect-ratio: 1/0.66;
+  }
+}
 .swiper__img {
-  width: 50%;
+  width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
