@@ -525,8 +525,6 @@ path {
 }
 @media (max-width: 1024px) {
   .employees__photo-wrap {
-    width: 227px;
-    height: 227px;
     margin-bottom: 25px;
   }
 }
@@ -546,6 +544,7 @@ path {
   font-weight: 900;
   font-size: 18px;
   text-transform: uppercase;
+  text-transform: capitalize;
   margin-bottom: 9.7px;
   font-size: 24px;
   font-weight: 700;
@@ -640,17 +639,12 @@ path {
 .employees__icon-wrap:active path {
   fill: rgba(185, 12, 12, 0.8);
 }
-.employees__icon-wrap:hover {
-  border: 1px solid rgba(255, 67, 67, 0.8);
-}
-.employees__icon-wrap:active {
-  border: 1px solid rgba(185, 12, 12, 0.8);
-}
 
 .swiper {
   margin-bottom: 114px;
 }
 .swiper .swiper-slide {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: 31px;
@@ -663,28 +657,35 @@ path {
 .swiper__img-wrap {
   aspect-ratio: 1/0.66;
   display: flex;
+  position: relative;
 }
 .swiper__img {
-  width: 100%;
+  width: 50%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  position: absolute;
+  top: 0%;
+  left: 0%;
 }
 .swiper__content {
   text-align: left;
   padding: 116px 170px 116px 129px;
   background-color: rgb(92, 50, 73);
 }
+@media (max-width: 1150px) {
+  .swiper__content {
+    padding: 30px 75px 25px 50px;
+  }
+}
 @media (max-width: 1024px) {
   .swiper__content {
     padding: 47px 104px 25px 88px;
-    text-align: center;
   }
 }
 @media (max-width: 767px) {
   .swiper__content {
     padding: 30px 25px 35px 20px;
-    text-align: center;
   }
 }
 .swiper__text {
@@ -881,11 +882,13 @@ path {
   }
 }
 
+.footer {
+  background-color: rgb(53, 60, 101);
+}
 .footer__content {
   display: grid;
   text-align: center;
   grid-template-columns: repeat(3, 1fr);
-  background-color: rgb(53, 60, 101);
   padding: 46.59px 0px 41.19px 0px;
 }
 @media (max-width: 767px) {
@@ -976,6 +979,7 @@ path {
   -moz-column-gap: 27px;
        column-gap: 27px;
   justify-content: center;
+  margin-top: 48.86px;
 }
 @media (max-width: 1024px) {
   .footer__icons {
@@ -1022,12 +1026,6 @@ path {
 }
 .footer__icon-wrap:active path {
   fill: rgba(185, 12, 12, 0.8);
-}
-.footer__icon-wrap:hover {
-  border: 1px solid rgba(255, 67, 67, 0.8);
-}
-.footer__icon-wrap:active {
-  border: 1px solid rgba(185, 12, 12, 0.8);
 }
 @media (max-width: 767px) {
   .footer .title-social {
