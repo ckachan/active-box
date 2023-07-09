@@ -552,10 +552,9 @@ path{
         }
     }
     &__img-wrap{
-        // aspect-ratio: 1/.66;
         display: flex;
         position:relative;
-        @media(min-width:1025){
+        @media(min-width:767){
             aspect-ratio: 1/.66;
         }
     }

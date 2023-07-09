@@ -657,7 +657,7 @@ path {
   display: flex;
   position: relative;
 }
-@media (min-width: 1025) {
+@media (min-width: 767) {
   .swiper__img-wrap {
     aspect-ratio: 1/0.66;
   }
