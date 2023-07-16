@@ -354,16 +354,20 @@ path{
     
     &__items{
         display:grid;
-        gap:none;
+        gap:2px;
         grid-template-columns: repeat(4, 1fr);
+        @media (max-width:1024px){
+            margin-bottom: 78px;
+        }
         @media(max-width:767px){
             grid-template-columns: repeat(2, 1fr);
+            margin-bottom: 35px;
         }
         }
     
 
     &__item-wrapper{
-        aspect-ratio:1/.8;
+        aspect-ratio:1/.9;
         position:relative;
         display:flex;
         text-align:center;
